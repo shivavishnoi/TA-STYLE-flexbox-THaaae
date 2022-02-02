@@ -1,0 +1,76 @@
+<!-- 
+1. Create a simple page having a header, main content, and a footer.
+
+2. Inside the header keep the brand name to the left and all the navigation to the right.
+
+4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+
+5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+
+6. After the gallery section footer will come.
+
+7. Use flexbox properties and values to create columns.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+     <div class="container header">
+       <div class="logo">
+         <img src="logo.svg" alt="">
+       </div>
+       <div>
+         <nav>
+           <a href="#">HOME</a>
+           <a href="#">Login</a>
+           <a href="#">Login</a>
+         </nav>
+       </div>
+     </div>
+  </header>
+  <main>
+    <section class="article">
+      <div class="hero container">
+        <div class="info">
+          <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, tempore.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum similique illum quia, voluptate fuga necessitatibus laudantium, eum repellendus debitis nesciunt, obcaecati neque! Possimus pariatur atque ex suscipit fugiat quasi totam.45</p>
+        </div>
+        <div class="picture">
+          <img src="Capture.JPG" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container col-2-3">
+        <div><img src="Capture.JPG" alt=""></div>
+        <div><img src="Capture.JPG" alt=""></div>
+        <div><img src="Capture.JPG" alt=""></div>
+        <div><img src="Capture.JPG" alt=""></div>
+        <div><img src="Capture.JPG" alt=""></div>
+        <div><img src="Capture.JPG" alt=""></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer">
+      <div>
+        <p>All right reserved</p>
+      </div>
+      <div>
+        <nav>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+          <a href="#">News</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
